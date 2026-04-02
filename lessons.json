@@ -1,0 +1,254 @@
+[
+    {
+        "id": "phishing",
+        "category": "Classic Cyber Risk",
+        "threat": {
+            "name": "Phishing Attack",
+            "iconId": "Mail",
+            "description": "Uses deceptive emails and fake websites to trick users into revealing sensitive credentials or personal data.",
+            "color": "text-red-500",
+            "bg": "bg-red-500/20"
+        },
+        "defense": {
+            "name": "Multi-Factor Auth (MFA)",
+            "iconId": "Smartphone",
+            "description": "Requires a second verification step (like a mobile token), ensuring that a stolen password alone is not enough to gain access.",
+            "color": "text-green-400",
+            "bg": "bg-green-500/20"
+        }
+    },
+    {
+        "id": "ransomware",
+        "category": "Classic Cyber Risk",
+        "threat": {
+            "name": "Ransomware",
+            "iconId": "Bug",
+            "description": "Malicious software that encrypts a victim's files, with the attacker demanding a ransom to restore access.",
+            "color": "text-red-500",
+            "bg": "bg-red-500/20"
+        },
+        "defense": {
+            "name": "Immutable Backups",
+            "iconId": "Database",
+            "description": "Maintains data in a state that cannot be deleted or modified, allowing for full system restoration without paying attackers.",
+            "color": "text-blue-400",
+            "bg": "bg-blue-500/20"
+        }
+    },
+    {
+        "id": "cve_exploit",
+        "category": "Classic Cyber Risk",
+        "threat": {
+            "name": "Software Vulnerability (CVE)",
+            "iconId": "Bomb",
+            "description": "Exploits known security flaws in software or hardware to gain unauthorized access or execute malicious code.",
+            "color": "text-red-500",
+            "bg": "bg-red-500/20"
+        },
+        "defense": {
+            "name": "Security Patch",
+            "iconId": "Wrench",
+            "description": "Updates provided by vendors to fix vulnerabilities, effectively closing the 'open doors' before they can be exploited.",
+            "color": "text-cyan-400",
+            "bg": "bg-cyan-500/20"
+        }
+    },
+    {
+        "id": "ddos",
+        "category": "Classic Cyber Risk",
+        "threat": {
+            "name": "DDoS Attack",
+            "iconId": "CloudLightning",
+            "description": "Floods a target server or network with a massive volume of fake traffic to overwhelm resources and cause a service outage.",
+            "color": "text-red-500",
+            "bg": "bg-red-500/20"
+        },
+        "defense": {
+            "name": "Web App Firewall (WAF)",
+            "iconId": "Shield",
+            "description": "Monitors and filters incoming web traffic, identifying and blocking malicious patterns associated with botnets and DDoS attacks.",
+            "color": "text-purple-400",
+            "bg": "bg-purple-500/20"
+        }
+    },
+    {
+        "id": "prompt_injection",
+        "category": "Emerging AI Risk",
+        "threat": {
+            "name": "Prompt Injection",
+            "iconId": "Terminal",
+            "description": "Manipulates an AI's behavior by embedding hidden commands within a prompt to bypass safety guardrails or leak data.",
+            "color": "text-orange-500",
+            "bg": "bg-orange-500/20"
+        },
+        "defense": {
+            "name": "Input Sanitization",
+            "iconId": "FileCode2",
+            "description": "Cleans and validates user inputs to ensure that the AI treats text strictly as data rather than as executable instructions.",
+            "color": "text-emerald-400",
+            "bg": "bg-emerald-500/20"
+        }
+    },
+    {
+        "id": "deepfake_fraud",
+        "category": "Emerging AI Risk",
+        "threat": {
+            "name": "Deepfake CEO Fraud",
+            "iconId": "UserX",
+            "description": "Uses AI-generated voice or video clones to impersonate executives and trick employees into making unauthorized wire transfers.",
+            "color": "text-orange-500",
+            "bg": "bg-orange-500/20"
+        },
+        "defense": {
+            "name": "Cryptographic Identity",
+            "iconId": "Key",
+            "description": "Uses digital signatures and hardware keys to verify identity, moving beyond easily spoofed visual or audio confirmation.",
+            "color": "text-yellow-400",
+            "bg": "bg-yellow-500/20"
+        }
+    },
+    {
+        "id": "data_poisoning",
+        "category": "Emerging AI Risk",
+        "threat": {
+            "name": "Training Data Poisoning",
+            "iconId": "FlaskConicalOff",
+            "description": "Corrupts the data used to train AI models, introducing subtle biases or 'backdoors' that attackers can trigger later.",
+            "color": "text-orange-500",
+            "bg": "bg-orange-500/20"
+        },
+        "defense": {
+            "name": "Data Provenance",
+            "iconId": "FileSearch",
+            "description": "Tracks the origin and history of all training data, ensuring that only verified and uncompromised datasets are used for AI training.",
+            "color": "text-teal-400",
+            "bg": "bg-teal-500/20"
+        }
+    },
+    {
+        "id": "sql_injection",
+        "category": "Classic Cyber Risk",
+        "threat": {
+            "name": "SQL Injection",
+            "iconId": "DatabaseZap",
+            "description": "Inserts malicious SQL code into input fields to manipulate backend databases and steal or destroy sensitive information.",
+            "color": "text-red-500",
+            "bg": "bg-red-500/20"
+        },
+        "defense": {
+            "name": "Parameterized Queries",
+            "iconId": "Code2",
+            "description": "Separates the SQL command from the user-supplied data, preventing the database from ever executing input as code.",
+            "color": "text-blue-400",
+            "bg": "bg-blue-500/20"
+        }
+    },
+    {
+        "id": "mitm",
+        "category": "Classic Cyber Risk",
+        "threat": {
+            "name": "Man-in-the-Middle Attack",
+            "iconId": "GitMerge",
+            "description": "Secretly intercepts and potentially alters the communication between two parties who believe they are talking directly to each other.",
+            "color": "text-red-500",
+            "bg": "bg-red-500/20"
+        },
+        "defense": {
+            "name": "TLS/HTTPS Encryption",
+            "iconId": "Lock",
+            "description": "Encrypts data in transit and uses certificates to verify the identity of the server, making interception and tampering impossible.",
+            "color": "text-green-400",
+            "bg": "bg-green-500/20"
+        }
+    },
+    {
+        "id": "insider_threat",
+        "category": "Classic Cyber Risk",
+        "threat": {
+            "name": "Insider Threat",
+            "iconId": "UserRoundX",
+            "description": "Occurs when someone with authorized access (like an employee) intentionally or accidentally compromises organizational security.",
+            "color": "text-red-500",
+            "bg": "bg-red-500/20"
+        },
+        "defense": {
+            "name": "Zero Trust Architecture",
+            "iconId": "ScanEye",
+            "description": "Operates on the principle of 'never trust, always verify,' requiring strict identity verification for every person and device.",
+            "color": "text-indigo-400",
+            "bg": "bg-indigo-500/20"
+        }
+    },
+    {
+        "id": "supply_chain",
+        "category": "Classic Cyber Risk",
+        "threat": {
+            "name": "Supply Chain Attack",
+            "iconId": "PackageX",
+            "description": "Compromises a trusted third-party vendor or software library to distribute malware to all of that vendor's customers.",
+            "color": "text-red-500",
+            "bg": "bg-red-500/20"
+        },
+        "defense": {
+            "name": "Software Bill of Materials (SBOM)",
+            "iconId": "ListChecks",
+            "description": "A formal record containing the details and supply chain relationships of various components used in building software.",
+            "color": "text-cyan-400",
+            "bg": "bg-cyan-500/20"
+        }
+    },
+    {
+        "id": "password_spraying",
+        "category": "Classic Cyber Risk",
+        "threat": {
+            "name": "Password Spraying",
+            "iconId": "KeyRound",
+            "description": "Attempts to log in to many different accounts using a few commonly used passwords to avoid account lockout policies.",
+            "color": "text-red-500",
+            "bg": "bg-red-500/20"
+        },
+        "defense": {
+            "name": "Privileged Access Management (PAM)",
+            "iconId": "ShieldCheck",
+            "description": "Secures, manages, and monitors privileged account access, enforcing just-in-time permissions and multi-factor authentication.",
+            "color": "text-violet-400",
+            "bg": "bg-violet-500/20"
+        }
+    },
+    {
+        "id": "ai_model_theft",
+        "category": "Emerging AI Risk",
+        "threat": {
+            "name": "AI Model Theft",
+            "iconId": "BrainCircuit",
+            "description": "Involves querying a proprietary AI model to reverse-engineer its logic and parameters, effectively stealing intellectual property.",
+            "color": "text-orange-500",
+            "bg": "bg-orange-500/20"
+        },
+        "defense": {
+            "name": "Model Watermarking",
+            "iconId": "Fingerprint",
+            "description": "Embeds a unique, hidden identifier into the AI's outputs, allowing organizations to prove ownership if their model is stolen.",
+            "color": "text-pink-400",
+            "bg": "bg-pink-500/20"
+        }
+    },
+    {
+        "id": "shadow_ai",
+        "category": "Emerging AI Risk",
+        "threat": {
+            "name": "Shadow AI Usage",
+            "iconId": "EyeOff",
+            "description": "The use of unauthorized AI tools by employees, which can lead to sensitive corporate data being leaked to third-party AI providers.",
+            "color": "text-orange-500",
+            "bg": "bg-orange-500/20"
+        },
+        "defense": {
+            "name": "AI Governance Policy",
+            "iconId": "ScrollText",
+            "description": "Establishes clear rules for AI adoption, data handling, and security reviews to ensure all AI usage is visible and compliant.",
+            "color": "text-amber-400",
+            "bg": "bg-amber-500/20"
+        }
+    }
+]
