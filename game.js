@@ -17,7 +17,7 @@ const state = {
     nextDirection: { x: 1, y: 0 },
     food: null,
     score: 0,
-    speed: 120,
+    speed: 160,
     gameInterval: null,
     sessionSeconds: 0,
     sessionTimer: null,
